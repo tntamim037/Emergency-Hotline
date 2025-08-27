@@ -20,8 +20,16 @@
         </div>
 
         <div class="right_side flex gap-3">
-            <div class="flex bg-[#41ff6b1a] px-6 justify-center items-center rounded-2xl gap-2 font-bold">0<img class="h-[30px] w-[30px] " src="./assets/heart.png" alt=""></div>
-            <div class="flex bg-[#41ff6b1a] px-8 justify-center items-center rounded-2xl gap-2 font-bold">0 <img class="h-[24px] w-[24px] " src="./assets/coin.png" alt=""></div>
+            <div class="flex bg-[#41ff6b1a] px-6 justify-center items-center rounded-2xl gap-2 font-bold">
+                <span id="love_count">0</span>
+                <img class="h-[30px] w-[30px] " src="./assets/heart.png" alt="">
+            </div>
+
+            <div class="flex bg-[#41ff6b1a] px-8 justify-center items-center rounded-2xl gap-2 font-bold">
+                <span>0</span>
+                <img class="h-[24px] w-[24px] " src="./assets/coin.png" alt="">
+            </div>
+
             <div class="btn bg-[#00A63E] text-white rounded-2xl px-6">0 Copy</div>
         </div>
 
@@ -37,7 +45,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-lg p-1" src="./assets/emergency.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+             <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">জাতীয় জরুরি সেবা</h1>
             <p class="text-[#5C5C5C]">National Emergency</p>
@@ -54,7 +62,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#dfefff] rounded-lg p-1" src="./assets/police.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+              <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">পুলিশ</h1>
             <p class="text-[#5C5C5C]">Police</p>
@@ -71,7 +79,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-lg p-1" src="./assets/fire-service.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+              <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">ফায়ার সার্ভিস</h1>
             <p class="text-[#5C5C5C]">Fire Service</p>
@@ -94,7 +102,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-lg p-1" src="./assets/ambulance.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+              <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">অ্যাম্বুলেন্স</h1>
             <p class="text-[#5C5C5C]">Ambulance</p>
@@ -111,7 +119,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-lg p-1" src="./assets/emergency.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+              <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">নারী ও শিশু সহায়তা</h1>
             <p class="text-[#5C5C5C]">Women & Child Helpline</p>
@@ -128,7 +136,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-lg p-1" src="./assets/emergency.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+              <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">দুদক</h1>
             <p class="text-[#5C5C5C]">Anti-Corruption</p>
@@ -145,7 +153,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-lg p-1" src="./assets/emergency.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+              <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">বিদ্যুৎ বিভ্রাট</h1>
             <p class="text-[#5C5C5C]">Electricity Outage</p>
@@ -162,7 +170,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-lg p-1" src="./assets/emergency.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+              <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">ব্র্যাক</h1>
             <p class="text-[#5C5C5C]">Brac</p>
@@ -179,7 +187,7 @@
         <div id="" class="flex flex-col gap-3 p-5 shadow-xl rounded-xl">
             <div class="flex justify-between mt-5">
               <img class="w-[30px] h-[30px] bg-[#FFE3E2] rounded-lg p-1" src="./assets/emergency.png" alt="">
-              <i class="fa-regular fa-heart"></i>
+              <span onclick="increaseLove()"><i class="fa-regular fa-heart"></i></span>
             </div>
             <h1 class="font-bold text-xl">বাংলাদেশ রেলওয়ে</h1>
             <p class="text-[#5C5C5C]">Bangladesh Railway</p>
